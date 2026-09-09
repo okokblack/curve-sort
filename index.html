@@ -91,6 +91,9 @@
       box-shadow: 0 3px 10px var(--orange-shadow);
 
       vertical-align: middle;
+	  font-size: 15px;
+      font-weight: 600;
+		
       cursor: pointer;
       user-select: none;
       -webkit-tap-highlight-color: transparent;
@@ -237,7 +240,7 @@
     }
 
     /* 모바일 */
-    @media (max-width: 600px) {
+    @media (max-width: 410px) {
       body {
         min-height: 100svh;
         padding-bottom: 24px;
@@ -245,7 +248,7 @@
       }
 
       #mainTable {
-        width: 94%;
+        width: 90%;
         max-width: none;
         margin-top: 30px;
         padding: 17px 11px;
@@ -317,7 +320,7 @@
   <div id="resultField"></div>
 
   <div id="restartArea">
-    <button id="restartButton" type="button" onclick="restartSort()">다시 시작</button>
+    <button id="restartButton" type="button" onclick="restartSort()">Restart</button>
   </div>
 
   <!-- 이 영역은 결과가 떠도 사라지지 않습니다. -->
@@ -342,7 +345,7 @@
       "Better than yesterday",
       "カスミソウ",
       "Make rules",
-      "Afterglow"
+      "Afterglow",
       "Astrist",
       "君の笑顔とあの空",
       "Glitch",
@@ -529,7 +532,7 @@
       let str = "";
 
       str += '<table class="resultTable">';
-      str += '<tr><th>순위</th><th>이름</th></tr>';
+      str += '<tr><th>Rank</th><th>曲名</th></tr>';
 
       for (let i = 0; i < namMember.length; i++) {
         str += '<tr><td class="rankCell">' + ranking + '</td><td>' + namMember[lstMember[0][i]] + '</td></tr>';
