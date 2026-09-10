@@ -121,7 +121,7 @@
     }
 
     /* PC처럼 실제 hover가 있는 기기에서만 적용 */
-    @media (hover: hover) {
+    @media (hover: hover) and (pointer: fine) {
       #leftField:hover,
       #rightField:hover {
         background-color: var(--accent-hover);
@@ -204,7 +204,7 @@
         box-shadow 0.18s ease;
     }
 
-    @media (hover: hover) {
+    @media (hover: hover) and (pointer: fine){
       #restartButton:hover {
         transform: translateY(-2px);
         background: #f8d8c2;
